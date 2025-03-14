@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Console Log 
-        run: echo "Hello"
+        run: echo "${{ toJson(github.event) }}"
