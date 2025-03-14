@@ -1,0 +1,10 @@
+name: Issue Event
+on: 
+  issues:
+    type: [opened, edited, milestoned]
+jobs:
+  IssueDesc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Console Log 
+        run: echo "Hello"
